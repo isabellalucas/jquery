@@ -1,0 +1,37 @@
+@media screen and (min-width:1000px){
+    
+    .sticky-bar {
+        display: grid;
+        grid-template: "h1 nav button" 1fr /
+                        max-content  1fr max-content; 
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    }
+
+    h1 {
+        grid-area: h1;
+    }
+
+    ul {
+        grid-area: nav;
+        display:grid;
+        grid-template-columns: max-content max-content max-content max-content;
+        justify-content: right;
+    }
+
+    button {
+        grid-area: button;
+    }
+
+    .wrapper {
+        display:grid;
+        grid-template-columns: auto 300px;
+    }
+    
+    .scroll {
+        border-width: 1px;
+        transition: border-width 1s;
+    }
+
+}
